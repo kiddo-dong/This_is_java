@@ -6,6 +6,6 @@ public class PhonePhone extends Phone {
 	}
 	
 	void yee() {
-		System.out.println(owner + "병신");
+		System.out.println(owner + "멍청이");
 	}
 }
