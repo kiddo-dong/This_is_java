@@ -10,6 +10,18 @@ public class RemoteEx {
 		rc.setMute(true);
 		rc.setMute(false);
 		
-		rc.turnOff();
+		System.out.println();
+		
+		rc = new Audio();
+		rc.turnOn();
+		rc.setVolume(5);
+		
+		rc.setMute(true);
+		rc.setMute(false);
+		
+		System.out.println();
+		
+		// static method 호출
+		RemoteControl.changeBettery();
 	}
 }
