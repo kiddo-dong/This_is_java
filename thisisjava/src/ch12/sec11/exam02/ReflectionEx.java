@@ -24,6 +24,5 @@ public class ReflectionEx {
 	
 	// private 메소드
 	private static void printParameters(Class[] paraketers) {
-		for
 	}
 }
