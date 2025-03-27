@@ -2,8 +2,6 @@ package ch14.sec03.exam01;
 
 import java.awt.Toolkit;
 
-import javax.print.attribute.standard.PrinterURI;
-
 public class BeepPrintingExam {
 	public static void main(String[] args){
 		
