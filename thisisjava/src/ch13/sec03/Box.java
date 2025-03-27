@@ -10,4 +10,15 @@ public class Box<T> {
 	public void set(T t) {
 		this.t = t;
 	}
+	public <T> void boxing(T t){
+		Box<T> box = new Box<>();
+		box.set(t);
+		System.out.println(box.get());
+	} 
+	
+	public static <T> void boxing2(T t){
+		Box<T> box = new Box<>();
+		box.set(t);
+		System.out.println(box.get());
+	} 
 }
