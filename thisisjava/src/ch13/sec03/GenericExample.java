@@ -1,23 +1,17 @@
 package ch13.sec03;
 
 public class GenericExample {
-	
-	public <T> Box<T> boxing(T t){
-		Box<T> box = new Box<>();
-		box.set(t);
-		return box;
-	} 
-	
 	public static void main(String[] args) {
-		GenericExample a = new GenericExample();
-		Box<Integer> box1 = a.boxing(100); // static
-		int intvalue = box1.get();
-		System.out.println(intvalue);
+		// public 메소드 사용 시
+		Box<Integer> num = new Box<>();
+		num.boxing(100);
 		
+		Box<String> name = new Box<>();
+		name.boxing("홍길동");
 		
-		GenericExample b = new GenericExample();
-		Box<String> box2 = b.boxing("홍길동");
-		String name = box2.get();
-		System.out.println(name);
+		System.out.println();
+		// static 메소드
+		Box.boxing2(100);
+		Box.boxing2("최동현");
 	}
 }
