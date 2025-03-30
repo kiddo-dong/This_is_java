@@ -1,7 +1,5 @@
 package ch14.sec04;
 
-import ch14.sec02.MainThreadExample;
-
 public class ThreadNameExample {
 	// main thread
 	public static void main(String[] args) {
