@@ -13,8 +13,7 @@ public class QueueExample {
 		while(!msg.isEmpty()){
 			Message message = msg.poll();
 			System.out.println(message.command + " : " + message.to);
-		}
-		
+		}	
 	}
 	
 }
