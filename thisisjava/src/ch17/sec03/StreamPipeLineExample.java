@@ -1,5 +1,6 @@
 package ch17.sec03;
 
+import java.util.stream.Stream;
 import java.util.List;
 
 public class StreamPipeLineExample {
@@ -16,5 +17,11 @@ public class StreamPipeLineExample {
 				.getAsDouble();
 		
 		System.out.println(listAverage);
+		
+		System.out.println();
+	
+		list.stream()
+		.map(student -> student.getName())
+		.forEach(name -> System.out.println(name));
 	}
 }
